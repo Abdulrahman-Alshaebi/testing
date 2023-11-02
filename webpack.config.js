@@ -16,6 +16,7 @@ module.exports = {
         product : [asset('js/product.js'), asset('js/products.js')],
         order   : asset('js/order.js'),
         testimonials   : asset('js/testimonials.js'),
+        'my-product-card':'./src/assets/js/partials/product-card.js',
     },
     output : {
         path: public(),
