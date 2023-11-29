@@ -169,33 +169,6 @@ class ProductCard extends HTMLElement {
   }
 
   render(){
-//      // Create a new container for the promotion title (above everything).
-//   let promotionTitleContainer = document.createElement('div');
-//   promotionTitleContainer.className = 'promotion-title-container';
-
-//   // Add the promotion title to the new container.
-//   if (this.product.promotion_title) {
-//     promotionTitleContainer.innerHTML = `<div class="s-product-card-promotion-title">${this.product.promotion_title}</div>`;
-//   }
-
-//   // Append the new container to the parent element (this).
-//   this.appendChild(promotionTitleContainer);
-
-// Create a new container for the promotion title (above the image).
-let promotionTitleContainer = document.createElement('div');
-promotionTitleContainer.className = 'promotion-title-container';
-
-// Add the promotion title to the new container.
-if (this.product.promotion_title) {
-  promotionTitleContainer.innerHTML = `<div class="s-product-card-promotion-title">${this.product.promotion_title}</div>`;
-}
-
-// Append the new container above the image container.
-this.insertBefore(promotionTitleContainer, this.querySelector('.s-product-card-image'));
-
-
-
-
     this.classList.add('s-product-card-entry'); 
     this.setAttribute('id', this.product.id);
     !this.horizontal && !this.fullImage && !this.minimal? this.classList.add('s-product-card-vertical') : '';
@@ -209,6 +182,7 @@ this.insertBefore(promotionTitleContainer, this.querySelector('.s-product-card-i
     this.product?.is_out_of_stock?  this.classList.add('s-product-card-out-of-stock') : '';
 
     this.innerHTML = `
+    ${!this.fullImage && !this.minimal ? this.getProductBadge() : ''}
         <div class="${!this.fullImage ? 's-product-card-image' : 's-product-card-image-full'}">
           <a href="${this.product?.url}">
             <img class="s-product-card-image-${salla.url.is_placeholder(this.product?.image?.url)
@@ -220,7 +194,7 @@ this.insertBefore(promotionTitleContainer, this.querySelector('.s-product-card-i
               alt=${this.product?.image?.alt}
               data-src=${this.product?.image?.url || this.product?.thumbnail}
             />
-            ${!this.fullImage && !this.minimal ? this.getProductBadge() : ''}
+            
           </a>
           ${this.fullImage ? `<a href="${this.product?.url}" class="s-product-card-overlay"></a>`:''}
           ${!this.horizontal && !this.fullImage ?
