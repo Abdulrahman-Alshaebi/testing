@@ -3,11 +3,61 @@ import Swal from 'sweetalert2';
 import Anime from './partials/anime';
 import initTootTip from './partials/tooltip';
 import AppHelpers from "./app-helpers";
+import $ from "jquery";
 
 class App extends AppHelpers {
   constructor() {
     super();
     window.app = this;
+  }
+
+   // New method for logo slider functionality
+   initLogoSlider() {
+    $('.arrow').on('click', function() {
+      var $this = $(this),
+        width = $('.logo-slider-item').width(),
+        speed = 500;
+      if ($this.hasClass('prev')) {
+        $('.logo-slider-frame').animate({
+          scrollLeft: '-=' + width
+        }, speed, function() {
+          checkArrows();
+        });
+      } else if ($this.hasClass('next')) {
+        $('.logo-slider-frame').animate({
+          scrollLeft: '+=' + width
+        }, speed, function() {
+          checkArrows();
+        });
+      }
+    });
+
+    $(window).on("load resize", function() {
+      checkArrows();
+      $('#logo-slider .logo-slider-item').each(function(i) {
+        var $this = $(this),
+          left = $this.width() * i;
+        $this.css({
+          left: left
+        })
+      }); 
+    });
+
+    // var resizeId;
+    // $(window).resize(function() {
+    //   clearTimeout(resizeId);
+    //   resizeId = setTimeout(doneResizing, 500);
+    // });
+
+    // // Add checkArrows and doneResizing functions here
+    // function checkArrows() {
+    //   // Implement the logic for checking arrows
+    //   // For example, show or hide arrows based on the scroll position
+    // }
+
+    // function doneResizing() {
+    //   // Implement the logic after resizing is done
+    // }
   }
 
   loadTheApp() {
@@ -22,6 +72,9 @@ class App extends AppHelpers {
     this.initiateCollapse();
     initTootTip();
     this.loadModalImgOnclick();
+    
+    // Call the new method to initialize the logo slider
+    this.initLogoSlider();
 
     salla.comment.event.onAdded(() => window.location.reload());
 
