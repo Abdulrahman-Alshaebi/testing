@@ -20,8 +20,10 @@
     "@salla.sa/twilight-tailwind-theme": "^2.12.45",
     "animejs": "^3.2.1",
     "fslightbox": "^3.3.0-2",
+    "jquery": "^3.7.1",
     "lite-youtube-embed": "^0.2.0",
     "mmenu-light": "^3.0.9",
+    "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.3.3"
   },
   "devDependencies": {
