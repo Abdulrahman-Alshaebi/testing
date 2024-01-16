@@ -1,316 +1,570 @@
-<style>
-#logo-slider {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 65%;
-  height: 9em;
-  margin: auto;
-  overflow: hidden;
+
+ <style>
+        /* Styling for the logo container and logos */
+        {# #logo-slider {
+            width: 80%; /* Adjust the width as needed */
+            margin: auto;
+            overflow: hidden;
+        }
+
+        #logo-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .logo {
+            width: 100px; /* Adjust the width of your logos */
+            height: 100px; /* Adjust the height of your logos */
+            margin: 0 10px;
+        }
+
+        /* Navigation buttons styling */
+        #prev, #next {
+            cursor: pointer;
+            font-size: 24px;
+            margin-top: 40px;
+        }
+ #}
+
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff
 }
-  
-  button.arrow {
-    border: none;
+
+
+        .carousl-wrapper {
+  width: 100%;
+  display: block;
+  padding-bottom: 54px;
+  border-top: 1px solid #D8D8D8;
+  border-bottom: 1px solid #D8D8D8;
+  padding-top: 54px;
+  /*margin-top: 100px;*/
+}
+
+.brand-carousl {
+  width: 100%;
+  display: block;
+  padding: 0px !important;
+}
+
+.brand-carousl .brand-item {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 990px) {
+  .brand-carousl .brand-item img {
+    max-height: 100%;
+    height: auto;
+    max-width: 180px;
+    object-fit: contain;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .brand-carousl .brand-item img {
+    display: inline-block;
+    max-width: 80%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
-#logo-slider .arrow {
+  .brand-carousl {
+    padding: 0px 20px !important;
+  }
+
+  .brand-carousl .brand-item {
+    padding: 0px 0px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .brand-section-title.text-center {
+    text-align: left !important;
+  }
+
+  .carousl-wrapper {
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+  }
+}
+
+.brand-carousl .brand-item a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #212121 !important;
+}
+
+.brand-carousl .slick-track {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.brand-carousl .slick-arrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
-  position: absolute;
-  width: 2em;
-  height: 100%;
-  padding: 0;
+  z-index: 9;
+}
+
+.brand-carousl .slick-arrow img {
+  width: 10px;
+}
+
+.brand-carousl .slick-arrow.arrow-left {
+  left: 0;
+}
+
+.brand-carousl .slick-arrow.arrow-right {
+  right: 0;
+}
+
+    </style>
+
+
+{# <div id="logo-slider">
+    <div id="logo-container">
+        <!-- Add your logos here -->
+        <img class="logo" src="https://cdn.salla.network/images/sbc.png?v=2.0.3" alt="Logo 1">
+        <img class="logo" src="https://cdn.salla.network/images/sbc.png?v=2.0.3" alt="Logo 2">
+        <img class="logo" src="https://cdn.salla.network/images/sbc.png?v=2.0.3" alt="Logo 3">
+        <!-- Add more logos as needed -->
+    </div>
+</div>
+
+
+
+
+
+<!-- Navigation buttons -->
+<div id="prev">&lt;</div>
+<div id="next">&gt;</div> #}
+
+<div id="shopify-section-1634139591ab1df8ad" class="shopify-section">
+<div class="carousl-wrapper">
+  <section class="containwith-image common-space">
+    
+    
+    
+    <div class="brand-carousl slick-initialized slick-slider"><div class="slick-arrow arrow-left" style="display: block;"><img src="//dossier.co/cdn/shop/t/1185/assets/angle-left.svg?v=53672727868888068891701195311" alt="arrow"></div>
+      
+      <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 6336px; transform: translate3d(-1152px, 0px, 0px);"><div class="brand-item slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/insidehook.svg?v=181847402434017243081701195316" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/ad.svg?v=159925524781834544031701195324" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/msn.svg?v=53052183606970369461701195314" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/apartment-therapy.svg?v=159223528412034835111701195314" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 288px;" tabindex="0">
+        <a href="javascript:void(0)" tabindex="0">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/teenvogue.svg?v=91562724923349695591701195317" title="Dossier Brand" class="lazyloaded" src="//dossier.co/cdn/shop/t/1185/assets/teenvogue.svg?v=91562724923349695591701195317">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 288px;" tabindex="0">
+        <a href="javascript:void(0)" tabindex="0">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/insta.svg?v=54000366059693149671701195312" title="Dossier Brand" class="lazyloaded" src="//dossier.co/cdn/shop/t/1185/assets/insta.svg?v=54000366059693149671701195312">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 288px;" tabindex="0">
+        <a href="javascript:void(0)" tabindex="0">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/buzzfeed.svg?v=139766232312705500921701195315" title="Dossier Brand" class="lazyloaded" src="//dossier.co/cdn/shop/t/1185/assets/buzzfeed.svg?v=139766232312705500921701195315">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 288px;" tabindex="0">
+        <a href="javascript:void(0)" tabindex="0">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/fashionista.svg?v=95667310007146456991701195311" title="Dossier Brand" class="lazyloaded" src="//dossier.co/cdn/shop/t/1185/assets/fashionista.svg?v=95667310007146456991701195311">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide" data-slick-index="4" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/et.svg?v=43591673953787511941701195313" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide" data-slick-index="5" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/insidehook.svg?v=181847402434017243081701195316" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide" data-slick-index="6" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/ad.svg?v=159925524781834544031701195324" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide" data-slick-index="7" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/msn.svg?v=53052183606970369461701195314" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide" data-slick-index="8" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/apartment-therapy.svg?v=159223528412034835111701195314" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/teenvogue.svg?v=91562724923349695591701195317" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/insta.svg?v=54000366059693149671701195312" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/buzzfeed.svg?v=139766232312705500921701195315" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/fashionista.svg?v=95667310007146456991701195311" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/et.svg?v=43591673953787511941701195313" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/insidehook.svg?v=181847402434017243081701195316" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/ad.svg?v=159925524781834544031701195324" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/msn.svg?v=53052183606970369461701195314" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div><div class="brand-item slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" style="width: 288px;" tabindex="-1">
+        <a href="javascript:void(0)" tabindex="-1">
+          
+          <div class="brand-image">
+          
+          <img  src="//dossier.co/cdn/shop/t/1185/assets/apartment-therapy.svg?v=159223528412034835111701195314" title="Dossier Brand" class="lazyload">
+          
+          </div>
+        </a>
+      </div></div></div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <div class="slick-arrow arrow-right" style="display: block;"><img src="//dossier.co/cdn/shop/t/1185/assets/angle-right.svg?v=164853121399329597331701195313" alt="arrow"></div></div>
+  </section>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        // Variables
+        var logoContainer = $('#logo-container');
+        var logos = $('.logo');
+        var logoWidth = logos.first().outerWidth(true);
+        var logoCount = logos.length;
+        var currentSlide = 0;
+
+        // Set container width
+        logoContainer.width(logoWidth * logoCount);
+
+        // Previous button click event
+        $('#prev').click(function () {
+            if (currentSlide > 0) {
+                currentSlide--;
+            } else {
+                currentSlide = logoCount - 1;
+            }
+            updateSlider();
+        });
+
+        // Next button click event
+        $('#next').click(function () {
+            if (currentSlide < logoCount - 1) {
+                currentSlide++;
+            } else {
+                currentSlide = 0;
+            }
+            updateSlider();
+        });
+
+        // Function to update slider position
+        function updateSlider() {
+            var translateValue = -currentSlide * logoWidth;
+            logoContainer.css('transform', 'translateX(' + translateValue + 'px)');
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{# <style>
+body {
   margin: 0;
-  outline: 0;
-  background: transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
 }
 
-#logo-slider .arrow:hover {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-#logo-slider .arrow:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 0.75em;
-  height: 0.75em;
+.slider-container {
+  position: relative;
+  width: 80%;
   margin: auto;
-  border-style: solid;
-}
-
-#logo-slider .prev {
-  left: 0;
-  bottom: 0;
-}
-
-#logo-slider .prev:before {
-  left: 0.25em;
-  border-width: 3px 0 0 3px;
-  border-color: #333 transparent transparent #333;
-  transform: rotate(-45deg);
-}
-
-#logo-slider .next {
-  right: 0;
-  bottom: 0;
-}
-
-#logo-slider .next:before {
-  right: 0.25em;
-  border-width: 3px 3px 0 0;
-  border-color: #333 #333 transparent transparent;
-  transform: rotate(45deg);
-}
-
-#logo-slider .logo-slider-frame {
-  position: absolute;
-  top: 0;
-  left: 2em;
-  right: 2em;
-  bottom: 0;
-  border-left: 0.25em solid transparent;
-  border-right: 0.25em solid transparent;
   overflow: hidden;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-#logo-slider .logo-slider-item {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 25%;
-  height: 100%;
+.slider-frame {
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
-#logo-slider .logo-slider-inset {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0.5em 0.25em;
+.slider-items {
+  display: flex;
   overflow: hidden;
+  width: 100%;
 }
 
-@media ( max-width: 60em ) {
-  #logo-slider .logo-slider-item {
-    width: 33.33%;
-  }
-  #logo-slider {
-    height: 10em;
-  }
+.slider-items img {
+  width: 100%;
+  height: auto;
 }
 
-@media ( max-width: 45em ) {
-  #logo-slider .logo-slider-item {
-    width: 50%;
-  }
-  #logo-slider {
-    height: 12em;
-  }
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 3px;
+  transition: background 0.3s ease;
 }
 
-@media ( max-width: 30em ) {
-  #logo-slider .logo-slider-item {
-    width: 100%;
-  }
-  #logo-slider {
-    height: 12em;
-  }
+.arrow:hover {
+  background: #555;
 }
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
 </style>
 
-<div id="logo-slider">
-  <button class='arrow prev'></button>
-  <button class='arrow next'></button>
-  <div class="logo-slider-frame">
-    
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/santander-allianz.png">
-      </div>
+<div class="slider-container">
+  <button class="arrow prev">&#8249;</button>
+  <div class="slider-frame">
+    <div class="slider-items">
+      <img src="https://cdn.salla.network/images/sbc.png?v=2.0.3" alt="Image 1">
+      <img src="https://cdn.salla.network/images/sbc.png?v=2.0.3" alt="Image 2">
+      <img src="https://cdn.salla.network/images/sbc.png?v=2.0.3" alt="Image 3">
+      <!-- Add more images as needed -->
     </div>
-
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/allianz-targo.png">
-      </div>
-    </div>
- 
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/hypo-wuestenrot.png">
-      </div>
-    </div>    
-    
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/ing-dkb.png">
-      </div>
-    </div>
-
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/creditplus-dsl.png">
-      </div>
-    </div>
-
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/lbs-kfw.png">
-      </div>
-    </div>
-    
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/barclaycard-hanseatic.png">
-      </div>
-    </div>
-    
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/sparkasse-volksbank.png">
-      </div>
-    </div>
-    
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/cosmos-muenhyp.png">
-      </div>
-    </div>
-    
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/oyak-bhw.png">
-      </div>
-    </div> 
-
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/creditlife-axa.png">
-      </div>
-    </div>
-       
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/ergo-sparda.png">
-      </div>
-    </div>
-       
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/bbbank-hannoversche.png">
-      </div>
-    </div>
-
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/swiss-conti.png">
-      </div>
-    </div>
-
-    <div class="logo-slider-item">
-      <div class="logo-slider-inset">
-          <img src="http://www.synusie.de/images/codepen/partner/signaliduna-volkswohlbund.png">
-      </div>
-    </div>
-
-
-
-   
-    
   </div>
+  <button class="arrow next">&#8250;</button>
 </div>
-<!-- partial -->
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
 
-  <script>
-  function defer(method) {
-  if (window.jQuery)
-    method();
-  else
-    setTimeout(function() {
-      defer(method)
-    }, 50);
-}
-defer(function() {
-  (function($) {
-    
-    function doneResizing() {
-      var totalScroll = $('.logo-slider-frame').scrollLeft();
-      var itemWidth = $('.logo-slider-item').width();
-      var difference = totalScroll % itemWidth;
-      if ( difference !== 0 ) {
-        $('.logo-slider-frame').animate({
-          scrollLeft: '-=' + difference
-        }, 500, function() {
-          checkArrows();
-        });
-      }
-    }
-    
-    function checkArrows() {
-      var totalWidth = $('#logo-slider .logo-slider-item').length * $('.logo-slider-item').width();
-      var frameWidth = $('.logo-slider-frame').width();
-      var itemWidth = $('.logo-slider-item').width();
-      var totalScroll = $('.logo-slider-frame').scrollLeft();
-      
-     // if ( ((totalWidth - frameWidth) - totalScroll) < itemWidth ) {
-     //   $(".next").css("visibility", "hidden");
-     // }
-     // else {
-     //   $(".next").css("visibility", "visible");
-     // }
-     // if ( totalScroll < itemWidth ) {
-     //   $(".prev").css("visibility", "hidden");
-     // }
-     // else {
-     //   $(".prev").css("visibility", "visible");
-     // }
-    }
-    
-    $('.arrow').on('click', function() {
-      var $this = $(this),
-        width = $('.logo-slider-item').width(),
-        speed = 500;
-      if ($this.hasClass('prev')) {
-        $('.logo-slider-frame').animate({
-          scrollLeft: '-=' + width
-        }, speed, function() {
-          checkArrows();
-        });
-      } else if ($this.hasClass('next')) {
-        $('.logo-slider-frame').animate({
-          scrollLeft: '+=' + width
-        }, speed, function() {
-          checkArrows();
-        });
-      }
-    });
-    
-    $(window).on("load resize", function() {
-      checkArrows();
-      $('#logo-slider .logo-slider-item').each(function(i) {
-        var $this = $(this),
-          left = $this.width() * i;
-        $this.css({
-          left: left
-        })
-      }); 
-    }); 
-    
-    var resizeId;
-    $(window).resize(function() {
-        clearTimeout(resizeId);
-        resizeId = setTimeout(doneResizing, 500);
-    });
-    
-  })(jQuery);
+<script>
+$(document).ready(function() {
+  let currentIndex = 0;
+  let itemWidth = $('.slider-items img').width();
+
+  function updateSlider() {
+    const newPosition = -currentIndex * itemWidth;
+    $('.slider-frame').css('transform', 'translateX(' + newPosition + 'px)');
+  }
+
+  function changeSlide(direction) {
+    const totalItems = $('.slider-items img').length;
+    currentIndex = (currentIndex + direction + totalItems) % totalItems;
+    updateSlider();
+  }
+
+  $('.prev').click(function() {
+    changeSlide(-1);
+  });
+
+  $('.next').click(function() {
+    changeSlide(1);
+  });
+
+  // Initial update to set the correct position
+  updateSlider();
+
+  // Update the position on window resize
+  $(window).resize(function() {
+    itemWidth = $('.slider-items img').width();
+    updateSlider();
+  });
 });
-  
-  </script>
+
+
+</script> #}
